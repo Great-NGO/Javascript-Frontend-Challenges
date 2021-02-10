@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vowel Counter App</title>
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> -->
+
+    <style>
+        html {
+            background-color: rgb(127, 255, 205);
+        }
+        
+        body {
+            background-color: aquamarine;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        
+        main {
+            border: 3px solid;
+            border-radius: 30px;
+            max-width: 60%;
+            height: 310px;
+            margin: 2% auto;
+            background-color: aquamarine;
+        }
+        
+        header {
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        form {
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 3px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+        
+        button {
+            background-color: #6b0ac5fa;
+            min-width: 100px;
+            color: white;
+            border: none;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 40%;
+        }
+        
+        button:hover {
+            background-color: #ae80d8fa;
+        }
+        
+        h1 {
+            font-size: 45px;
+            margin-bottom: -8px;
+        }
+        
+        @media screen and (max-width: 630px) {
+            main {
+                height: 430px;
+                margin-top: 0;
+            }
+            button {
+                margin: 0;
+            }
+        }
+        
+        @media screen and (max-width: 414px) {
+            main {
+                height: 480px;
+                margin-top: 0;
+            }
+        }
+        
+        @media screen and (max-width:375px) {
+            main {
+                height: 500px;
+                margin-top: 0;
+            }
+            button {
+                margin: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Vowel Counter App</h1>
+            <h2>Type in any word or sentence to find out how many vowel letters it has:</h2>
+        </header>
+
+        <form action="">
+            <input type="text" id="inpText">
+            <button type="submit">Check</button>
+        </form>
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+/* PAGE STYLING */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #06997d;
+}
+
+#heading {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    /* letter-spacing: 1px; */
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: -10px;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: large;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 1px 1px gainsboro;
+}
+
+button {
+    background-color: #171720;
+    color: white;
+    border: none;
+    font-size: 15px;
+    min-height: 50px;
+    cursor: pointer;
+    transition-duration: 500ms;
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ada2a2;
+}
+
+table {
+    border: none;
+    background-color: gainsboro;
+    margin: 0 auto;
+    height: 50px;
+    width: 65%;
+}
+
+thead {
+    height: 50px;
+    font-size: 35px;
+    text-align: left;
+}
+
+tbody td {
+    height: 30px;
+    font-size: 25px;
+    text-align: left;
+    background-color: white;
+    display: inline-block;
+}
+
+#clearAll {
+    font-size: medium;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+/* responsive styling */
+
+@media screen and (max-width:375px) {
+    button[type="submit"] {
+        margin: 2px;
+    }
+    button#myBtn {
+        width: 50px;
+        margin: 2px;
+        font-size: small;
+    }
+    #delButton {
+        margin: 0;
+        padding-right: 15px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    button#myBtn {
+        width: 50px;
+        margin: 2px;
+        font-size: small;
+    }
+    #delButton {
+        margin: 0;
+        padding-right: 15px;
+        padding-left: 0;
+    }
+}
+
+
+/* MODAL STYLING */
+
+
+/* THIS IS THE STYLING FOR THE MODAL ASPECT */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

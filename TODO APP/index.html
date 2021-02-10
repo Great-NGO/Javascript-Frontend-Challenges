@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> BASIC TODO APP</title>
+
+    <style>
+        body {
+            background-color: #9a76b1;
+        }
+        
+        form {
+            border: 3px solid black;
+            width: 50%;
+            margin: 50px auto;
+            padding: 1rem;
+            border-radius: 30px;
+            /* height: 200px; */
+        }
+        
+        button {
+            background-color: #171720;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            height: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            transition-duration: 500ms;
+            /* width: 100px; */
+        }
+        
+        input {
+            border: 3px solid gray;
+            /* margin-top: 10px; */
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 25px;
+            border-radius: 5px;
+            height: 50px;
+            width: 60%;
+            margin-bottom: 10px;
+            /* display: inline-block; */
+        }
+        
+        div {
+            width: 40%;
+            margin: 0 auto;
+        }
+        
+        ul {
+            /* padding: 10px; */
+            list-style-type: decimal;
+            font-size: 20px;
+            font-weight: 700;
+            /* color: white; */
+        }
+        
+        @media (max-width: 450px) {
+            input {
+                height: 50px;
+                width: 100px;
+            }
+        }
+        
+        @media (max-width: 250px) {
+            input {
+                height: 100px;
+                width: 50px;
+            }
+        }
+        /* responsive styling */
+        
+        @media screen and (max-width:375px) {
+            input {
+                font-size: small;
+            }
+        }
+        
+        @media screen and (max-width:1015px) {
+            input {
+                height: 60px;
+                width: 80%;
+            }
+        }
+        
+        @media screen and (max-width:650px) {
+            input {
+                height: 100px;
+                /* width: 80%; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--  works without the action attribute -->
+    <form action="\" id="todoForm">
+        <h1>TODO LIST APP</h1>
+
+        <input type="text" id="text" placeholder="Add an Item">
+        <button type="submit" id="submit">Submit</button>
+        <button id="delete">Clear List</button>
+
+    </form>
+
+    <div>
+        <ul id="display">
+
+
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

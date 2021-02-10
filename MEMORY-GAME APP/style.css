@@ -1,0 +1,37 @@
+.cardContainer {
+    /* margin: 1px auto; */
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300px;
+    max-width: 400px;
+}
+
+.gameInfo p {
+    font-size: 20px;
+    margin-left: 1%;
+}
+
+nav {
+    margin-left: 1%;
+}
+
+@media screen and (max-width:425px) {
+    .gameInfo {
+        margin-top: 110px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .gameInfo {
+        margin-top: 310px;
+    }
+}
+
+h1 {
+    font-size: 35px;
+}
+
+body {
+    background-color: #EAEAEA;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker App</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #088787;
+        }
+        
+        div #heading {
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+        }
+        
+        h1 {
+            font-weight: bolder;
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        form {
+            margin: 0 auto;
+            width: 60%;
+        }
+        
+        input {
+            border: 3px solid gray;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+            height: 40px;
+            max-width: 800px;
+        }
+        
+        label {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        input[type="text"] {
+            display: inline;
+            width: 100%;
+        }
+        
+        input#amount {
+            width: 50%;
+        }
+        
+        input[type="date"] {
+            margin-left: 10px;
+            width: 100%;
+        }
+        
+        button {
+            background-color: #171720;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            height: 50px;
+            cursor: pointer;
+            transition-duration: 500ms;
+            /* margin-left: 30%; */
+            margin-bottom: 30px;
+        }
+        
+        table {
+            border: none;
+            /* border: 1px solid black; */
+            /* border-collapse: collapse;    */
+            background-color: gainsboro;
+            margin: 0 auto;
+            height: 50px;
+            width: 60%;
+        }
+        
+        thead {
+            height: 52px;
+            font-size: 50px;
+            /* border-bottom: 1px solid #b8b0b0; */
+        }
+        
+        tbody td {
+            /* padding: 15px; */
+            height: 30px;
+            font-size: 25px;
+            text-align: left;
+            background-color: white;
+        }
+        
+        .errorCatch {
+            width: 60%;
+            margin: 5px auto;
+            background-color: #f18181;
+            color: #171720;
+            font-size: 40px;
+        }
+        
+        #trDisplay {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 758px) {
+            button[type="submit"] {
+                margin: 0 0 10px 10px;
+            }
+        }
+        
+        @media screen and (max-width: 650px) {
+            thead {
+                font-size: 35px;
+            }
+            .expTr {
+                height: 30px;
+            }
+        }
+        
+        @media screen and (max-width: 375px) {
+            thead {
+                font-size: 25px;
+            }
+            .expTr {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="heading">
+        <h1>EXPENSE-TRACKER APP</h1>
+        <h2>Add A New Item</h2>
+    </div>
+
+    <form action="" id="expTrackerForm">
+        <p id="name">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Where was the expense?" name="name" id="text">
+        </p>
+        <!-- <p> -->
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </p>
+        <p>
+            <label for="amount">Amount:</label>
+            <input type="text" name="amount" id="amount" placeholder="&#8358;">
+        </p>
+        <!-- </p> -->
+        <button type="submit" id="submit">Add Expense</button>
+        <button id="delete">Delete All Expenses</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Date</td>
+                <td>Amount</td>
+                <td> &nbsp;</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr id="trDisplay">
+
+            </tr>
+        </tbody>
+
+    </table>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
