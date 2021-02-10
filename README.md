@@ -1,6 +1,8 @@
 # Javascript-Frontend-Challenges
 A repo containing Javascript challenges, and frontend challenges in General
 
+ALL CHALLENGES ARE AVAILABLE IN THE MASTER BRANCH. Feel free to look at it
+
 The Folder - 5 Basic Javascript Projects are a collection of 5 frontend functional javascript web applications.
 Namely:
 !. A Todo Application
